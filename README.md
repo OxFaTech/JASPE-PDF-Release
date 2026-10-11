@@ -86,7 +86,7 @@ notice appears and another font has to be chosen.
 Hamburger menu at the top left, then "Einstellungen" (settings).
 
 - On start: window or maximized.
-- Design: Standard or "Jaspis" (banded jasper behind the pages that moves slowly, buttons and bars
+- Design: Standard or "Jaspis" (banded jasper behind the pages with slow waves running through it, buttons and bars
   of tinted glass), each light or dark following the system. Jaspis needs a little more computing
   time; the movement can be turned off.
 - Thin or normal scroll bars, scroll speed.
