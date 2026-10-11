@@ -1,0 +1,68 @@
+JASPE PDF – License Terms
+
+Copyright © 2026 Lucas Damme, OxFaTech Computer Services. All rights reserved.
+
+Licensor (hereinafter "OxFaTech"):
+Lucas Damme, OxFaTech Computer Services (sole proprietorship)
+support@oxfatech.de, https://oxfatech.de
+
+A German translation is provided in the file LICENSE.de. In case of any discrepancy, this English
+version prevails.
+
+1. Use
+
+JASPE PDF ("the Software") may be installed and used free of charge.
+
+2. Obtaining the Software
+
+The Software may only be obtained from sources provided by OxFaTech. These include the downloads
+offered by OxFaTech and package sources that install the Software unmodified from those downloads.
+
+3. Prohibited
+
+Without the prior written consent of OxFaTech, you may not
+
+a) modify or adapt the Software or create works based on it,
+b) decompile, disassemble or reverse engineer the Software,
+c) sell, rent, market or provide the Software for a fee,
+d) pass on, publish or distribute the Software through any other source, even unmodified and free
+   of charge,
+e) remove or alter copyright notices, marks or these license terms.
+
+Section 4 (translations) and section 6 (mandatory rights) remain unaffected.
+
+4. Translations
+
+Anyone may translate the texts of the Software's user interface through the translation project
+provided by OxFaTech (Crowdin). By submitting a translation, you grant everyone, in particular
+OxFaTech, a non-exclusive, free of charge, perpetual, irrevocable and worldwide right to reproduce,
+modify, distribute and make publicly available the translation and to grant sublicenses for these
+uses. Contributors are credited in the translation project. Rights in the original texts of the
+Software remain with OxFaTech.
+
+5. Third-party components
+
+The Software contains third-party components, including PDFium. These components are governed
+solely by their own license terms, which are included in the directory "third-party". These
+license terms do not restrict the rights granted for those components.
+
+6. Mandatory rights
+
+These license terms do not restrict rights that cannot be excluded by contract, in particular
+under sections 69d and 69e of the German Copyright Act (UrhG), such as making a backup copy,
+observing and testing the functioning of the Software, and decompiling it to the extent necessary
+for interoperability.
+
+7. Liability
+
+The Software is provided free of charge. OxFaTech is liable only for intent and gross negligence
+and for defects that were fraudulently concealed. Liability for injury to life, body or health and
+liability under the German Product Liability Act (Produkthaftungsgesetz) remain unaffected.
+
+8. Termination
+
+Any breach of these license terms terminates the right to use the Software.
+
+9. Governing law
+
+These license terms are governed by the laws of the Federal Republic of Germany.

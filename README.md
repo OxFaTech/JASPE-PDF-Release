@@ -170,8 +170,9 @@ the same: set in stone and sealed. With JASPE PDF you can still view, fill in an
 ## License
 
 Use is free of charge, all rights reserved. Obtain it only from OxFaTech's sources; no
-modification, no sale, no redistribution. The file `LICENSE` (English) is binding, `LICENSE.de` is a
-German translation. Both come with every release.
+modification, no sale, no redistribution. The file [`LICENSE`](LICENSE) (English) is binding,
+[`LICENSE.de`](LICENSE.de) is a German translation. Both are in this repository and come with every
+release.
 
 JASPE PDF includes PDFium and other third-party components. Their licenses come with every package.
 

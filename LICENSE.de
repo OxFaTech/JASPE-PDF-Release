@@ -1,0 +1,69 @@
+JASPE PDF – Lizenzbedingungen
+
+Deutsche Übersetzung. Maßgeblich ist die englische Fassung in der Datei LICENSE.
+
+Copyright © 2026 Lucas Damme, OxFaTech Computer Services. Alle Rechte vorbehalten.
+
+Anbieter (im Folgenden „OxFaTech“):
+Lucas Damme, OxFaTech Computer Services (Einzelunternehmen)
+support@oxfatech.de, https://oxfatech.de
+
+1. Nutzung
+
+JASPE PDF („die Software“) darf kostenlos installiert und genutzt werden.
+
+2. Bezug
+
+Die Software darf nur aus den von OxFaTech bereitgestellten Quellen bezogen werden. Dazu gehören
+die Downloads von OxFaTech sowie Paketquellen, die die Software unverändert aus diesen Downloads
+installieren.
+
+3. Nicht erlaubt
+
+Ohne vorherige schriftliche Zustimmung von OxFaTech ist es nicht erlaubt,
+
+a) die Software zu verändern, zu bearbeiten oder auf ihrer Grundlage andere Werke zu erstellen,
+b) die Software zu dekompilieren, zu disassemblieren oder zurückzuentwickeln,
+c) die Software zu verkaufen, zu vermieten, zu vermarkten oder gegen Entgelt bereitzustellen,
+d) die Software weiterzugeben, zu veröffentlichen oder über andere Quellen zu verbreiten, auch
+   unverändert und unentgeltlich,
+e) Urheberrechtsvermerke, Kennzeichen oder diese Lizenzbedingungen zu entfernen oder zu ändern.
+
+Abschnitt 4 (Übersetzungen) und Abschnitt 6 (zwingende Rechte) bleiben unberührt.
+
+4. Übersetzungen
+
+Jeder darf die Texte der Benutzeroberfläche der Software über das von OxFaTech bereitgestellte
+Übersetzungsprojekt (Crowdin) übersetzen. Wer eine Übersetzung einreicht, räumt damit jedermann,
+insbesondere OxFaTech, ein einfaches, unentgeltliches, zeitlich unbegrenztes, unwiderrufliches und
+weltweites Recht ein, die Übersetzung zu vervielfältigen, zu bearbeiten, zu verbreiten und
+öffentlich zugänglich zu machen sowie Unterlizenzen für diese Nutzungen zu erteilen. Beitragende
+werden im Übersetzungsprojekt genannt. Die Rechte an den Originaltexten der Software verbleiben bei
+OxFaTech.
+
+5. Komponenten Dritter
+
+Die Software enthält Komponenten Dritter, darunter PDFium. Für sie gelten ausschließlich ihre
+eigenen Lizenzbedingungen, die im Verzeichnis „third-party“ beiliegen. Diese Lizenzbedingungen
+schränken die Rechte an jenen Komponenten nicht ein.
+
+6. Zwingende Rechte
+
+Diese Lizenzbedingungen schränken keine Rechte ein, die vertraglich nicht ausgeschlossen werden
+können, insbesondere nach §§ 69d und 69e UrhG, etwa das Anfertigen einer Sicherungskopie, das
+Beobachten und Testen der Funktionsweise der Software und das Dekompilieren, soweit es für die
+Interoperabilität erforderlich ist.
+
+7. Haftung
+
+Die Software wird unentgeltlich überlassen. OxFaTech haftet nur für Vorsatz und grobe
+Fahrlässigkeit sowie für arglistig verschwiegene Mängel. Die Haftung für Schäden aus der Verletzung
+des Lebens, des Körpers oder der Gesundheit sowie nach dem Produkthaftungsgesetz bleibt unberührt.
+
+8. Ende des Nutzungsrechts
+
+Bei einem Verstoß gegen diese Lizenzbedingungen erlischt das Recht zur Nutzung der Software.
+
+9. Anwendbares Recht
+
+Es gilt das Recht der Bundesrepublik Deutschland.
