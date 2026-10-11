@@ -55,6 +55,9 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
 - Paragraph: selected text can be combined into a paragraph from the bar ("Absatz"). Drag its right
   edge to set the width; the text wraps as you type, and single words can be bold, italic or in
   another font.
+- Copy, cut and paste (Ctrl+C, Ctrl+X, Ctrl+V): pasted text goes to the mouse pointer. Within a
+  document it keeps its font, size and color; in another document it gets the same family if
+  installed, otherwise a similar standard font.
 - Fill in forms: text fields (also multi-line), check boxes, radio buttons, combo boxes and list
   boxes. Read-only fields, buttons and signature fields stay unchanged.
 - Undo and redo.
@@ -152,6 +155,7 @@ Default keys, changeable in the program.
 | Rotate view right / left | Ctrl+R / Ctrl+Shift+R |
 | Edit | Ctrl+E |
 | Undo / redo | Ctrl+Z / Ctrl+Shift+Z |
+| Copy / cut / paste | Ctrl+C / Ctrl+X / Ctrl+V |
 | Save / save as | Ctrl+S / Ctrl+Shift+S |
 | Delete selection / edit text / move | Del / Enter / arrow keys |
 | Add an object to the selection | Ctrl+click or Shift+click |
