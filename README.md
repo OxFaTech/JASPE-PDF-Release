@@ -44,7 +44,7 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
 - Edit text: click a text object, click again or press Enter, type the new text. A line that
   consists of several parts in the PDF is selected and edited as a whole.
 - Move text by dragging it with the mouse or with the arrow keys (1 pt, 10 pt with Shift); delete
-  it with Del. While dragging, a grid shows and the text snaps to it, and rather to the middle of
+  it with Del. While dragging, the text moves along, a grid shows and the text snaps to it, and rather to the middle of
   the page, to margins and columns, to edges of shapes and to the next line in the spacing used on
   the page; these guides are drawn thicker. Hold Alt to move freely.
 - Font family, bold, italic and size from the bar below the selection. You can choose the standard
