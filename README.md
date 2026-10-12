@@ -62,6 +62,10 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
   installed, otherwise a similar standard font.
 - Fill in forms: text fields (also multi-line), check boxes, radio buttons, combo boxes and list
   boxes. Read-only fields, buttons and signature fields stay unchanged.
+- Add form fields: "Feld hinzufügen" (add field), choose the kind (text, multi-line text, check box,
+  radio button, combo box, list box) and draw a rectangle on the page. A handle at a field's corner
+  selects it: name, required, read-only, multi-line, entries, another radio button for the group,
+  delete. Works with fields already in the PDF too, and can be undone.
 - Undo and redo.
 - Saving appends the changes to the file; the original bytes are kept. Before overwriting a file
   for the first time, JASPE PDF asks (cancel, save as, overwrite). Closing with unsaved changes
