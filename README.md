@@ -52,7 +52,10 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
   families of every PDF application (Helvetica, Times, Courier, Symbol, ZapfDingbats) and installed
   TrueType fonts whose license allows embedding. An embedded system font adds its own size to the
   file.
-- New text: "Text hinzufügen" (add text), click on the page, type, Enter.
+- New text: "Text hinzufügen" (add text), click on the page, type, Enter. Shift+Enter or Alt+Enter
+  starts a new line; text with several lines becomes a paragraph.
+- Typing: Enter, Tab or a click elsewhere takes the text, Esc discards it. Where several lines are
+  possible (paragraphs, multi-line form fields, entries), Shift+Enter or Alt+Enter breaks the line.
 - Multiple selection: Ctrl+click or Shift+click, or drag a rectangle on an empty area. Moving,
   deleting, size and style apply to all selected objects.
 - Paragraph: selected text can be combined into a paragraph from the bar ("Absatz"). Drag its right
@@ -78,8 +81,9 @@ notice appears and another font has to be chosen.
 
 ### Security
 - On Linux, the PDF library PDFium runs in a separate, sandboxed process (Landlock and seccomp). If
-  it crashes on a file, only that tab shows a message. On Windows, PDFium runs in the main program
-  for now.
+  it crashes on a file, only that tab shows a message. If the system does not allow the sandbox in
+  full (old kernel, some containers), JASPE PDF says so once per session. On Windows, PDFium runs
+  in the main program for now.
 - Scripts in PDF files are not run.
 - Only `http`, `https` and `mailto` links are opened; `file:`, `javascript:` and other schemes never
   are, nor addresses with control characters or invisible direction and zero-width characters.
