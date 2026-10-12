@@ -34,6 +34,7 @@ This repository contains only the finished packages (releases), no source code.
   recent files list can be turned off.
 - Rotate the view in 90° steps. This only affects the view, the file stays unchanged.
 - Internal links jump to their target page, web and mail links open the default application.
+- Select text by dragging over it and copy it with Ctrl+C, to paste it into other programs.
 - Light and dark follow the system.
 - The window appears with the first page right away; everything else loads when needed.
 
