@@ -80,10 +80,15 @@ lacks characters, JASPE PDF uses a similar standard font. If that one does not c
 notice appears and another font has to be chosen.
 
 ### Security
-- On Linux, the PDF library PDFium runs in a separate, sandboxed process (Landlock and seccomp). If
-  it crashes on a file, only that tab shows a message. If the system does not allow the sandbox in
-  full (old kernel, some containers), JASPE PDF says so once per session. On Windows, PDFium runs
-  in the main program for now.
+- The PDF library PDFium runs in a separate, sandboxed process. If it crashes on a file, only that
+  tab shows a message.
+  - Linux: Landlock (reading only font folders) and seccomp (no network, no starting programs).
+    If the system does not allow the sandbox in full (old kernel, some containers), JASPE PDF says
+    so once per session.
+  - Windows: low integrity level (no writing to the user's files, registry or other processes;
+    reading is still possible) in a job object (no further processes, limited memory, no
+    clipboard or desktop access, ends with JASPE PDF), plus process mitigations such as no code
+    generated at run time.
 - Scripts in PDF files are never run: the PDFium build used has no JavaScript engine and no XFA.
 - PDF actions have no effect except links: forms are not submitted, no data is imported, no
   program is started, and links to other files or into attachments are ignored.
