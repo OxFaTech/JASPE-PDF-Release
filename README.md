@@ -84,13 +84,31 @@ notice appears and another font has to be chosen.
   it crashes on a file, only that tab shows a message. If the system does not allow the sandbox in
   full (old kernel, some containers), JASPE PDF says so once per session. On Windows, PDFium runs
   in the main program for now.
-- Scripts in PDF files are not run.
+- Scripts in PDF files are never run: the PDFium build used has no JavaScript engine and no XFA.
+- PDF actions have no effect except links: forms are not submitted, no data is imported, no
+  program is started, and links to other files or into attachments are ignored.
+- Attachments (embedded files, such as the XML of a ZUGFeRD or Factur-X invoice) are never read,
+  opened or extracted. Saving keeps them unchanged.
 - Only `http`, `https` and `mailto` links are opened; `file:`, `javascript:` and other schemes never
   are, nor addresses with control characters or invisible direction and zero-width characters.
   Before opening a link, JASPE PDF asks and shows where it leads (host or recipient) and the full
   address (can be turned off). Attachments in mail links can be removed.
 - On first start, a notice points out that PDF files can contain harmful content and that JASPE PDF
   does not check them yet.
+
+### What this means for some PDFs
+- Forms with scripts: calculated fields (sums, tax) do not update, formatting (dates, amounts) and
+  checks while typing are missing, fields a script would show or hide stay as they are in the
+  file. Entered values are still saved.
+- Pure XFA forms (some government and LiveCycle forms) show only their fallback page, usually a
+  note to use another reader.
+- Links to other files and PDF portfolios do nothing; a portfolio shows its cover page only.
+- Attachments are not shown and cannot be saved.
+- Digital signatures are neither checked nor shown. As changes are appended to the file, an
+  existing signature stays valid for the signed version; validators then report changes made
+  after signing.
+- E-invoices (ZUGFeRD, Factur-X): changes to the visible content do not change the embedded XML,
+  which is what counts legally, and the file is no longer valid PDF/A-3 afterwards.
 
 ### Settings and design
 Hamburger menu at the top left, then "Einstellungen" (settings).
