@@ -82,8 +82,9 @@ notice appears and another font has to be chosen.
   for now.
 - Scripts in PDF files are not run.
 - Only `http`, `https` and `mailto` links are opened; `file:`, `javascript:` and other schemes never
-  are. Before opening a link, JASPE PDF asks and shows the full address (can be turned off).
-  Attachments in mail links can be removed.
+  are, nor addresses with control characters or invisible direction and zero-width characters.
+  Before opening a link, JASPE PDF asks and shows where it leads (host or recipient) and the full
+  address (can be turned off). Attachments in mail links can be removed.
 - On first start, a notice points out that PDF files can contain harmful content and that JASPE PDF
   does not check them yet.
 
