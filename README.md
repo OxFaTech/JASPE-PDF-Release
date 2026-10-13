@@ -123,13 +123,20 @@ notice appears and another font has to be chosen.
 - Pure XFA forms (some government and LiveCycle forms) show only their fallback page, usually a
   note to use another reader.
 - Links to other files and PDF portfolios do nothing; a portfolio shows its cover page only.
-- Attachments are not shown and cannot be saved.
+- Attachments are not shown and cannot be saved, except that the XML of an e-invoice is read
+  (see below).
 - Digital signatures are not checked for authenticity. JASPE PDF recognises signed files and only
   changes what the signature allows: if it allows no changes, the file can only be read; otherwise
   form fields the signature does not lock can be filled in, and saving appends only their values,
   so the signature stays valid.
 - E-invoices (ZUGFeRD, Factur-X): changes to the visible content do not change the embedded XML,
   which is what counts legally, and the file is no longer valid PDF/A-3 afterwards.
+
+E-invoices: if a PDF carries an e-invoice (ZUGFeRD, Factur-X, XRechnung in CII or UBL), "E-Rechnung"
+shows at the top right. A click opens the invoice data at the right side: number, dates, seller,
+buyer, bank account, positions, taxes and totals, or all values of the file. A click on a value
+copies it. The XML is read as plain data in the sandboxed render process, without DTDs or external
+references. A setting opens the panel whenever such a file is opened.
 
 ### Settings and design
 Hamburger menu at the top left, then "Einstellungen" (settings).
