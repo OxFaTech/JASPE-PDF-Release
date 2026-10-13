@@ -57,6 +57,10 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
 - Images and drawings on the page can be selected like text, moved, resized by their corners and
   deleted. "Einfügen" also inserts images (PNG, JPEG, WebP, GIF) and shapes (rectangle, ellipse,
   line, arrow); a bar sets line color, fill and line width of drawings.
+- Comments and markings: "Einfügen" adds a note ("Kommentar") where you click or highlights text
+  you drag over ("Markierung"). Notes and markings, also from other programs, can be selected,
+  moved and deleted, and the text of a note changed. Outside editing, pointing at a note shows
+  its text.
 - Typing: Enter, Tab or a click elsewhere takes the text, Esc discards it. Where several lines are
   possible (paragraphs, multi-line form fields, entries), Shift+Enter or Alt+Enter breaks the line.
 - Multiple selection: Ctrl+click or Shift+click, or drag a rectangle on an empty area. Moving,
