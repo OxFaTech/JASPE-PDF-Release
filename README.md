@@ -70,6 +70,11 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
   radio button, combo box, list box) and draw a rectangle on the page. A handle at a field's corner
   selects it: name, required, read-only, multi-line, entries, another radio button for the group,
   delete. Works with fields already in the PDF too, and can be undone.
+- Pages: a bar under each page moves it up or down and adds an empty page after it; its menu adds
+  an empty page in another format (A3 to A6, US Letter, portrait or landscape), inserts the pages
+  of other PDFs, turns or deletes the page. "Seiten" (pages) opens a window with all pages as
+  thumbnails: pick them with a click (Ctrl, Shift for more), drag them to a new place, add, import,
+  turn or delete them.
 - Undo and redo.
 - Saving appends the changes to the file; the original bytes are kept. Before overwriting a file
   for the first time, JASPE PDF asks (cancel, save as, overwrite). Closing with unsaved changes
