@@ -85,10 +85,10 @@ notice appears and another font has to be chosen.
   - Linux: Landlock (reading only font folders) and seccomp (no network, no starting programs).
     If the system does not allow the sandbox in full (old kernel, some containers), JASPE PDF says
     so once per session.
-  - Windows: low integrity level (no writing to the user's files, registry or other processes;
-    reading is still possible) in a job object (no further processes, limited memory, no
-    clipboard or desktop access, ends with JASPE PDF), plus process mitigations such as no code
-    generated at run time.
+  - Windows: an AppContainer (no network, no access to the user's files; it reads only the
+    program folder and the user's fonts) in a job object (no further processes, limited memory,
+    no clipboard or desktop access, ends with JASPE PDF), plus process mitigations such as no
+    code generated at run time. If Windows refuses the AppContainer, JASPE PDF says so.
 - Scripts in PDF files are never run: the PDFium build used has no JavaScript engine and no XFA.
 - PDF actions have no effect except links: forms are not submitted, no data is imported, no
   program is started, and links to other files or into attachments are ignored.
