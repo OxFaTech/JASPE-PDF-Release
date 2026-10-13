@@ -112,9 +112,10 @@ notice appears and another font has to be chosen.
   note to use another reader.
 - Links to other files and PDF portfolios do nothing; a portfolio shows its cover page only.
 - Attachments are not shown and cannot be saved.
-- Digital signatures are neither checked nor shown. As changes are appended to the file, an
-  existing signature stays valid for the signed version; validators then report changes made
-  after signing.
+- Digital signatures are not checked for authenticity. JASPE PDF recognises signed files and only
+  changes what the signature allows: if it allows no changes, the file can only be read; otherwise
+  form fields the signature does not lock can be filled in, and saving appends only their values,
+  so the signature stays valid.
 - E-invoices (ZUGFeRD, Factur-X): changes to the visible content do not change the embedded XML,
   which is what counts legally, and the file is no longer valid PDF/A-3 afterwards.
 
