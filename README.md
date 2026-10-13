@@ -145,6 +145,11 @@ The installer is not signed, so Windows SmartScreen warns on first start: "More 
 Via winget, once the package has been accepted: `winget install OxFaTech.JASPEPDF`. Update with
 `winget upgrade`.
 
+Portable: unpack `JASPE_PDF-<version>-x64-portable.zip` and start `jaspe.exe` in the folder
+"JASPE PDF". While `portable.txt` is next to it, settings, recent files and crash reports stay in
+the subfolder `Daten` instead of the user profile; there are no start menu entries and no file
+association. To remove it, delete the folder.
+
 ### Arch Linux / CachyOS: pacman repository
 
 Add once to `/etc/pacman.conf`:
