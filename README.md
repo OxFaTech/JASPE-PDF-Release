@@ -98,6 +98,9 @@ notice appears and another font has to be chosen.
   are, nor addresses with control characters or invisible direction and zero-width characters.
   Before opening a link, JASPE PDF asks and shows where it leads (host or recipient) and the full
   address (can be turned off). Attachments in mail links can be removed.
+- If JASPE PDF itself crashes, it writes the version, the time and the error with its place in the
+  source code to `crash.log` in its settings folder, nothing else, and says where on the next
+  start. Nothing is sent.
 - On first start, a notice points out that PDF files can contain harmful content and that JASPE PDF
   does not check them yet.
 
