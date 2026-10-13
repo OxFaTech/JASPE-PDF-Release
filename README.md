@@ -52,8 +52,11 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
   families of every PDF application (Helvetica, Times, Courier, Symbol, ZapfDingbats) and installed
   TrueType fonts whose license allows embedding. An embedded system font adds its own size to the
   file.
-- New text: "Text hinzufügen" (add text), click on the page, type, Enter. Shift+Enter or Alt+Enter
+- New text: "Einfügen" (insert), "Text", click on the page, type, Enter. Shift+Enter or Alt+Enter
   starts a new line; text with several lines becomes a paragraph.
+- Images and drawings on the page can be selected like text, moved, resized by their corners and
+  deleted. "Einfügen" also inserts images (PNG, JPEG, WebP, GIF) and shapes (rectangle, ellipse,
+  line, arrow); a bar sets line color, fill and line width of drawings.
 - Typing: Enter, Tab or a click elsewhere takes the text, Esc discards it. Where several lines are
   possible (paragraphs, multi-line form fields, entries), Shift+Enter or Alt+Enter breaks the line.
 - Multiple selection: Ctrl+click or Shift+click, or drag a rectangle on an empty area. Moving,
