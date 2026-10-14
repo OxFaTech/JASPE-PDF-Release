@@ -61,6 +61,16 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
   you drag over ("Markierung"). Notes and markings, also from other programs, can be selected,
   moved and deleted, and the text of a note changed. Outside editing, pointing at a note shows
   its text.
+- Signing: "Einfügen" → "Signatur", draw a rectangle on the page, pick a template and how to sign:
+  only visible (an image of the signature with name, department, place and date, no certificate;
+  it can be moved and resized like an image), signed with filling in still allowed, or signed and
+  locked. Templates and certificates are set up under Settings → "Signieren": a certificate made
+  on your computer (RSA 3072, self-signed, five years) or imported from a `.p12`/`.pfx` file; the
+  private key is stored only encrypted with your password. A photo or scan of a handwritten
+  signature loses its paper background. The signature is a standard PAdES signature
+  (`ETSI.CAdES.detached`), optionally with an RFC 3161 timestamp from a time server such as
+  DigiCert. If the last signature of a file was made with your own certificate, JASPE PDF can
+  remove it again after asking for its password: the file is then as it was before signing.
 - Typing: Enter, Tab or a click elsewhere takes the text, Esc discards it. Where several lines are
   possible (paragraphs, multi-line form fields, entries), Shift+Enter or Alt+Enter breaks the line.
 - Multiple selection: Ctrl+click or Shift+click, or drag a rectangle on an empty area. Moving,
@@ -104,8 +114,13 @@ notice appears and another font has to be chosen.
 - Scripts in PDF files are never run: the PDFium build used has no JavaScript engine and no XFA.
 - PDF actions have no effect except links: forms are not submitted, no data is imported, no
   program is started, and links to other files or into attachments are ignored.
-- Attachments (embedded files, such as the XML of a ZUGFeRD or Factur-X invoice) are never read,
-  opened or extracted. Saving keeps them unchanged.
+- Attachments (embedded files) are never opened or extracted. Only the XML of an e-invoice is read,
+  as plain data. Saving keeps attachments unchanged.
+- Network: JASPE PDF goes online only to fetch a timestamp when signing, if the signature template
+  names a time server and "Netzwerkzugriffe zulassen" (allow network access) is on; it is off by
+  default. The PDF library never has network access.
+- Private keys for signing never leave the main process and are stored only encrypted (PBES2 with
+  scrypt and AES-256). Passwords are not stored.
 - Only `http`, `https` and `mailto` links are opened; `file:`, `javascript:` and other schemes never
   are, nor addresses with control characters or invisible direction and zero-width characters.
   Before opening a link, JASPE PDF asks and shows where it leads (host or recipient) and the full
@@ -148,6 +163,7 @@ Hamburger menu at the top left, then "Einstellungen" (settings).
 - Thin or normal scroll bars, scroll speed.
 - Grid for moving text: on or off, spacing in millimetres.
 - All shortcuts can be changed.
+- Signing: templates and certificates; allow network access (only for timestamps, off by default).
 
 ## Installation
 
