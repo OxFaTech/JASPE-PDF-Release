@@ -66,7 +66,8 @@ The editor starts with the pencil button at the top right (Ctrl+E) or with the s
   it can be moved and resized like an image), signed with filling in still allowed, or signed and
   locked. Templates and certificates are set up under Settings → "Signieren": a certificate made
   on your computer (RSA 3072, self-signed, five years) or imported from a `.p12`/`.pfx` file; the
-  private key is stored only encrypted with your password. A photo or scan of a handwritten
+  private key is stored only encrypted with your password, which the system's password store
+  (GNOME Keyring, KWallet, Windows Credential Manager) can keep if you want. A photo or scan of a handwritten
   signature loses its paper background. The signature is a standard PAdES signature
   (`ETSI.CAdES.detached`), optionally with an RFC 3161 timestamp from a time server such as
   DigiCert. If the last signature of a file was made with your own certificate, JASPE PDF can
